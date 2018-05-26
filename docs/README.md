@@ -8,8 +8,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+```cs
+            // Grab the compositor for the window
+            compositor = Window.Current.Compositor;
+
+            // Create a new ShapeVisual that will contain our drawings
+            Windows.UI.Composition.ShapeVisual shape = compositor.CreateShapeVisual();
+
+            // set this as a child of our host shape from XAML
+            ElementCompositionPreview.SetElementChildVisual(VectorHost, shape);
+```
 
 # Header 1
 ## Header 2
